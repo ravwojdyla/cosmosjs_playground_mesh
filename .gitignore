@@ -1,14 +1,7 @@
-# lib is globablly excluded in the main facets, include it in this app
-!lib/
-
 .cache
 
 # Exclude static data
-public/data/
-src/assets/data/
 .vite/
-*.duckdb
-*.duckdb.wal
 
 # Logs
 logs

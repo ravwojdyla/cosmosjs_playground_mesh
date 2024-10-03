@@ -1,27 +1,39 @@
 {
-  "name": "cosmos-usage-example",
-  "version": "1.3.0",
-  "description": "How to use @cosmograph/cosmos",
-  "main": "index.html",
+  "name": "cosmograph-viewer-mvp",
+  "version": "0.1.0",
+  "description": "MVP Cosmograph viewer for RS specific use-cases",
+  "type": "module",
+  "private": true,
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:7777/"
+    }
+  },
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@cosmograph/cosmos": "1.6.1",
-    "parcel-bundler": "^1.6.1"
+    "@cosmograph/cosmograph": "^1.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "typescript": "4.4.4"
-  },
-  "resolutions": {
-    "@babel/preset-env": "7.13.8"
-  },
-  "keywords": [
-    "network",
-    "force graph",
-    "webgl",
-    "simulation",
-    "data visualization"
-  ]
+    "@eslint/js": "^9.11.1",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.11.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.7.0",
+    "vite": "^5.4.8"
+  }
 }
